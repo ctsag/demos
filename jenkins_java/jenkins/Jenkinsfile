@@ -13,11 +13,11 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'mvn test'
+                sh 'cd jenkins_java ; mvn test'
             }
             post {
                 always {
-                    junit 'target/surefire-reports/*.xml'
+                    junit 'jenkins_java/target/surefire-reports/*.xml'
                 }
             }
         }
