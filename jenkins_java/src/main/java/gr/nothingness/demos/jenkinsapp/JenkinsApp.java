@@ -1,17 +1,17 @@
-package com.mycompany.app;
+package gr.nothingness.demos.jenkinsapp;
 
 /**
  * Hello world!
  */
-public class App
+public class JenkinsApp
 {
 
     private final String message = "Hello World!";
 
-    public App() {}
+    public JenkinsApp() {}
 
     public static void main(String[] args) {
-        System.out.println(new App().getMessage());
+        System.out.println(new JenkinsApp().getMessage());
     }
 
     private final String getMessage() {
